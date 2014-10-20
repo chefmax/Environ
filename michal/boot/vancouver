@@ -5,10 +5,10 @@ bin/apps/sigma0.nul tracebuffer_verbose S0_DEFAULT hostserial hostvga hostkeyb:0
 bin/apps/vancouver.nul
 bin/boot/munich
 vancuver.nulconfig <<EOF
-sigma0::mem:64 sigma0::dma  name::/s0/log name::/s0/timer name::/s0/fs/rom name::/s0/admission ||
+sigma0::mem:128 sigma0::dma  name::/s0/log name::/s0/timer name::/s0/fs/rom name::/s0/admission ||
 rom://bin/apps/vancouver.nul PC_PS2 ||
 rom://bin/boot/munich ||
-rom://imgs/bzImage-js clocksource=tsc ||
+rom://imgs/bzImage-js clocksource=tsc noapic ||
 rom://imgs/initrd-js.lzma
 EOF
 # You can fetch the following files from http://tudos.org/~sojka/nul/imgs/
