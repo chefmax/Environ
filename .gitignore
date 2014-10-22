@@ -4,6 +4,7 @@ bin
 *~
 *.pyc
 build
+!build/qemu
 !build/SConstruct
 !build/imgs
 TAGS

@@ -1,0 +1,5 @@
+sigma0::mem:64 sigma0::dma  name::/s0/log name::/s0/timer name::/s0/fs/rom name::/s0/admission ||
+rom://(cd)/bin/apps/vancouver.nul PC_PS2 ||
+rom://(cd)/bin/boot/munich ||
+rom://(cd)/imgs/bzImage-js clocksource=tsc ||
+rom://(cd)/imgs/initrd-js.lzma

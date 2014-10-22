@@ -1,0 +1,11 @@
+timeout 5
+
+title vancouver
+kernel (cd)/bin/apps/hypervisor serial
+module (cd)/bin/apps/sigma0.nul tracebuffer_verbose S0_DEFAULT hostserial hostvga hostkeyb:0,0x60,1,12 script_start:1,1 service_config
+module (cd)/bin/apps/vancouver.nul
+module (cd)/bin/boot/munich
+module (cd)/vancuver.nulconfig
+module (cd)/imgs/bzImage-js
+module (cd)/imgs/initrd-js.lzma
+
